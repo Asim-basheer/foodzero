@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/foodzero/static/css/main.b4c940f9.css",
+    "main.js": "/foodzero/static/js/main.ccbb292a.js",
+    "index.html": "/foodzero/index.html",
+    "main.b4c940f9.css.map": "/foodzero/static/css/main.b4c940f9.css.map",
+    "main.ccbb292a.js.map": "/foodzero/static/js/main.ccbb292a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b4c940f9.css",
+    "static/js/main.ccbb292a.js"
+  ]
+}
