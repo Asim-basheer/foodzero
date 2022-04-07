@@ -1,0 +1,76 @@
+.footer {
+  background-color: $green-dark;
+  padding: 10rem 0 20rem;
+  position: relative;
+  &__container {
+    @include flexCenterItems;
+    justify-content: space-between;
+
+    @include respond(sm) {
+      flex-direction: column;
+      text-align: center;
+      gap: 4rem;
+    }
+  }
+  &__form {
+    &--box {
+      @include flexCenterItems;
+      gap: 2rem;
+      input {
+        padding: 2.5rem 3rem;
+        width: 100%;
+        display: block;
+        background-color: transparent;
+        border: 1px solid $white;
+        font-size: 2rem;
+        outline: none;
+        color: $white;
+        &::placeholder {
+          color: $white;
+          font-size: 2rem;
+        }
+      }
+      > div {
+        @include respond(sm) {
+          width: 100%;
+        }
+      }
+      @include respond(sm) {
+        flex-direction: column;
+      }
+    }
+
+    @include respond(sm) {
+      flex-direction: column;
+    }
+  }
+
+  &__copyright {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    padding: 5rem 0;
+    width: 100%;
+    transform: translateX(-50%);
+    border-top: 1px dashed $white;
+    @include respond(sm) {
+      padding: 2rem;
+    }
+    &__container {
+      @include flexCenterItems;
+      justify-content: space-between;
+      @include respond(sm) {
+        flex-direction: column;
+        gap: 5rem;
+      }
+    }
+
+    &__icons {
+      @include flexCenterItems;
+      gap: 2rem;
+      img {
+        cursor: pointer;
+      }
+    }
+  }
+}

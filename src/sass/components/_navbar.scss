@@ -1,0 +1,41 @@
+.navbar {
+  height: 10rem;
+  background-color: $green-dark;
+  @include flexCenterItems;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
+  &__container {
+    display: flex;
+    align-items: center;
+  }
+
+  &__logo-box {
+    margin-right: 4.5rem;
+    @include respond(sm) {
+      width: 50%;
+    }
+  }
+
+  &__logo {
+    height: 6rem;
+
+    @include respond(md) {
+      height: 5rem;
+    }
+    @include respond(sm) {
+      height: 4rem;
+    }
+  }
+
+  &__contact-us {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: 2.6rem;
+    @include respond(sm) {
+      display: none;
+    }
+  }
+}

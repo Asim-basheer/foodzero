@@ -1,0 +1,14 @@
+.pragraph {
+  line-height: 1.5;
+
+  @include respond(md) {
+    font-size: 1.5rem;
+  }
+  &--white {
+    color: $white;
+  }
+
+  &--grey {
+    color: $grey-dark;
+  }
+}

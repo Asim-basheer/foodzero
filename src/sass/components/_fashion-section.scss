@@ -1,0 +1,34 @@
+.fashion-section {
+  padding: 5rem 0 15rem;
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4rem;
+
+    @include respond(sm) {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2rem;
+    min-height: 35rem;
+    @include respond(md) {
+      min-height: 45rem;
+    }
+    @include respond(sm) {
+      min-height: 35rem;
+    }
+  }
+  &__link-box {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    svg {
+      font-size: 2.5rem;
+      color: $green-dark;
+    }
+  }
+}

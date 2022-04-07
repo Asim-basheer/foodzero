@@ -1,0 +1,60 @@
+.user-comment {
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+  font-size: 1.3rem;
+  color: $green;
+  list-style: none;
+
+  @include respond(md) {
+    justify-content: space-between;
+    gap: 0;
+  }
+
+  li {
+    position: relative;
+    &:not(:first-of-type)::before {
+      content: "";
+      position: absolute;
+      width: 0.5rem;
+      height: 0.5rem;
+      border-radius: 50%;
+      background-color: $green;
+      left: -1.8rem;
+      top: 50%;
+      transform: translateY(-50%);
+      @include respond(md) {
+        left: -1rem;
+      }
+      @include respond(sm) {
+        left: -3.5rem;
+      }
+    }
+  }
+
+  &__user {
+    display: flex;
+    align-items: center;
+    @include respond(md) {
+      flex-direction: column;
+    }
+
+    @include respond(sm) {
+      flex-direction: row;
+    }
+  }
+
+  &__img {
+  }
+  &__name {
+  }
+
+  &__date {
+  }
+
+  &__time {
+  }
+
+  &__comments {
+  }
+}

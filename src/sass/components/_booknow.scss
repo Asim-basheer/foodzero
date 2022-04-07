@@ -1,0 +1,29 @@
+.booknow {
+  padding: 20rem 0;
+  background-color: $grey-light;
+  @include respond(md) {
+    padding: 15rem 0;
+  }
+  &__form {
+    input,
+    select {
+      padding: 1.5rem 2rem;
+      border: 1px solid $dark;
+      transition: all 0.3s ease-out;
+      font-size: 1.5rem;
+      &:focus {
+        outline: none;
+        box-shadow: 0 1rem 3rem rgba($green-light, 0.6);
+      }
+    }
+  }
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+
+    @include respond(sm) {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+}
