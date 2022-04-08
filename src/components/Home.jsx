@@ -5,19 +5,18 @@ import Pragraph from "./Pragraph";
 import { IoFishOutline } from "react-icons/io5";
 import { FaCarrot } from "react-icons/fa";
 import { GiCutLemon } from "react-icons/gi";
-import { HiOutlineArrowRight } from "react-icons/hi";
-import FashionCard from "./FashionCard";
-import UserComment from "./UserComment";
-import Button from "./Button";
 import BookNow from "./BookNow";
+import FashionCard from "./FashionCard";
+import Row from "./Row";
 
 function Home() {
   return (
-    <>
-      <section className="hero-section-1">
+    <div className="home">
+      {/* start hero section part one */}
+      <section className="home__hero-section-1">
         <Container>
-          <div className="hero-section-1__container">
-            <div className="hero-section-1__content">
+          <div className="home__hero-section-1__container">
+            <div className="home__hero-section-1__content">
               <Heading classes={"mb-lg t-first-upper white"}>
                 healthy{" "}
                 <span className="t-first-upper d-inline-block">eating</span>
@@ -28,11 +27,11 @@ function Home() {
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque
                 congue arcu
               </Pragraph>
-              <Pragraph classes="hero-section-1__scroll t-first-upper">
+              <Pragraph classes="home__hero-section-1__scroll t-first-upper">
                 scroll ------------------------
               </Pragraph>
             </div>
-            <div className="hero-section-1__img-box">
+            <div className="home__hero-section-1__img-box">
               <img
                 src="https://www9.0zz0.com/2022/03/31/13/162292686.png"
                 alt="hero section img"
@@ -42,19 +41,22 @@ function Home() {
           </div>
         </Container>
       </section>
+      {/* end hero section part one */}
 
-      <section className="hero-section-2">
+      {/* start hero section part two */}
+
+      <section className="home__hero-section-2">
         <Container>
-          <div className="hero-section-2__container">
-            <div className="hero-section-2__content-left">
-              <div className="hero-section-2__img-box-left mb-xl">
+          <div className="home__hero-section-2__container">
+            <div className="home__hero-section-2__content-left">
+              <div className="home__hero-section-2__img-box-left mb-xl">
                 <img
                   src="https://www3.0zz0.com/2022/03/31/14/528860016.png"
-                  alt="hero section img"
+                  alt="home__hero section img"
                   className="img-fluid"
                 />
               </div>
-              <div className="hero-section-2__heading">
+              <div className="home__hero-section-2__heading">
                 <Heading classes="white mb-lg t-first-upper" type="secondary">
                   start to plan <br /> your diet today
                 </Heading>
@@ -65,14 +67,14 @@ function Home() {
               </div>
             </div>
 
-            <div className="hero-section-2__content-right">
-              <div className="hero-section__content-right">
+            <div className="home__hero-section-2__content-right">
+              <div className="home__hero-section__content-right">
                 <Pragraph classes="mb-xl w-90">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque
                   congue arcu
                 </Pragraph>
               </div>
-              <div className="hero-section-2__img-box-right">
+              <div className="home__hero-section-2__img-box-right">
                 <img
                   src="https://www3.0zz0.com/2022/03/31/14/890962751.png"
                   alt="hero section img"
@@ -83,8 +85,10 @@ function Home() {
           </div>
         </Container>
       </section>
+      {/* end hero section part two */}
 
-      <section className="our-menu-section">
+      {/* start menu section */}
+      <section className="home__our-menu-section">
         <Container>
           <div className="main-heading mb-xl">
             <Heading classes="dark t-cap mb-sm" type="tertiary">
@@ -96,7 +100,7 @@ function Home() {
               section a brief description
             </Pragraph>
           </div>
-          <div className="our-menu-section__container">
+          <div className="home__our-menu-section__container">
             <div className="heading-description">
               <Heading classes="dark mb-lg t-right" type="quaternary">
                 <span>$</span>20
@@ -144,19 +148,21 @@ function Home() {
           </div>
         </Container>
       </section>
+      {/* end menu section */}
 
-      <section className="cook-section">
+      {/* start cock section */}
+      <section className="home__cook-section">
         <Container>
-          <div className="cook-section__container">
-            <div className="cook-section__img-box">
+          <div className="home__cook-section__container">
+            <div className="home__cook-section__img-box">
               <img
                 src="https://www11.0zz0.com/2022/04/01/05/322451068.png"
                 alt=""
-                className="cook-section__img img-fluid "
+                className="home__cook-section__img img-fluid "
               />
             </div>
 
-            <div className="main-heading cook-section__content">
+            <div className="main-heading home__cook-section__content">
               <Heading classes="dark t-first-upper mb-sm" type="tertiary">
                 excellent <br /> cook
               </Heading>
@@ -169,12 +175,14 @@ function Home() {
           </div>
         </Container>
       </section>
+      {/* end cock section */}
 
-      <section className="quality-section">
+      {/* start quality section */}
+      <section className="home__quality-section">
         <Container>
-          <div className="quality-section__container">
-            <div className="quality-section__box  t-center">
-              <div className="quality-section__icon m-auto mb-lg">
+          <div className="home__quality-section__container">
+            <div className="home__quality-section__box  t-center">
+              <div className="home__quality-section__icon m-auto mb-lg">
                 <IoFishOutline className="d-inline-block" />
               </div>
               <Heading classes="t-cap mb-md" type="quaternary" dashed={false}>
@@ -185,8 +193,8 @@ function Home() {
                 congue arcu
               </Pragraph>
             </div>
-            <div className="quality-section__box  t-center">
-              <div className="quality-section__icon m-auto mb-lg">
+            <div className="home__quality-section__box  t-center">
+              <div className="home__quality-section__icon m-auto mb-lg">
                 <FaCarrot className="d-inline-block" />
               </div>
               <Heading classes="t-cap mb-md" type="quaternary" dashed={false}>
@@ -197,8 +205,8 @@ function Home() {
                 congue arcu
               </Pragraph>
             </div>
-            <div className="quality-section__box  t-center">
-              <div className="quality-section__icon m-auto mb-lg">
+            <div className="home__quality-section__box  t-center">
+              <div className="home__quality-section__icon m-auto mb-lg">
                 <GiCutLemon className="d-inline-block" />
               </div>
               <Heading classes="t-cap mb-md" type="quaternary" dashed={false}>
@@ -212,76 +220,45 @@ function Home() {
           </div>
         </Container>
       </section>
+      {/* enf quality section */}
 
-      <section className="fashion-section">
+      {/* start fashion section */}
+
+      <div className="home__fashion-section">
         <Container>
-          <div className="fashion-section__container">
-            <div className="fashion-section__box">
-              <div className="fashion-section__img">
-                <FashionCard
-                  imgUrl={"https://www6.0zz0.com/2022/04/03/11/292754293.png"}
-                  namePlaceHolder="fashion"
-                />
-              </div>
-              <div className="fashion-section__content">
-                <UserComment
-                  useName="Julie Christie"
-                  commentsNumber="2"
-                  img="https://www6.0zz0.com/2022/04/02/08/683589710.png"
-                  date="October 17,2021"
-                  time="3:33 pm"
-                  classes="mb-md"
-                />
-                <Heading classes="mb-sm" type="quaternary">
-                  Fruit and vegetables and protection against diseases
-                </Heading>
-                <Pragraph classes="mb-lg" color="grey">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                </Pragraph>
-                <div className="fashion-section__link-box">
-                  <Button classes="dark" type="tertiary">
-                    read more
-                  </Button>
-                  <HiOutlineArrowRight />
-                </div>
-              </div>
-            </div>
-            <div className="fashion-section__box">
-              <div className="fashion-section__img">
-                <FashionCard
-                  imgUrl={"https://www14.0zz0.com/2022/04/03/21/365000523.png"}
-                  namePlaceHolder="fashion"
-                />
-              </div>
-              <div className="fashion-section__content">
-                <UserComment
-                  useName="Dianne Russell"
-                  commentsNumber="2"
-                  img="https://www11.0zz0.com/2022/04/03/21/679364818.png"
-                  date="October 17,2021"
-                  time="3:33 pm"
-                  classes="mb-md"
-                />
-                <Heading classes="mb-sm" type="quaternary">
-                  &nbsp;
-                </Heading>
-                <Pragraph classes="mb-lg" color="grey">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                </Pragraph>
-                <div className="fashion-section__link-box">
-                  <Button classes="dark" type="tertiary">
-                    read more
-                  </Button>
-                  <HiOutlineArrowRight />
-                </div>
-              </div>
-            </div>
-          </div>
+          <Row>
+            <FashionCard
+              imgCard="https://www2.0zz0.com/2022/04/08/00/392126827.png"
+              headingText="Fruit and vegetables and protection against diseases"
+              pragraphText="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+              name="Julie Christie"
+              date="October 17,2021"
+              time="3:33 pm"
+              comments="2 comments"
+              linkText="Read More"
+              userImg="https://www2.0zz0.com/2022/04/08/00/942727979.png"
+            />
+            <FashionCard
+              imgCard="https://www2.0zz0.com/2022/04/08/00/392126827.png"
+              headingText="Fruit and vegetables and protection against diseases"
+              pragraphText="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+              name="Julie Christie"
+              date="October 17,2021"
+              time="3:33 pm"
+              comments="2 comments"
+              linkText="Read More"
+              userImg="https://www2.0zz0.com/2022/04/08/00/942727979.png"
+            />
+          </Row>
         </Container>
-      </section>
+      </div>
+      {/* end fashion section */}
+
+      {/* book now is a component we used it in sevreal places */}
       <BookNow />
 
-      <section className="calories-section">
+      {/* start calories section */}
+      <section className="home__calories-section">
         <div className="t-center mb-xl">
           <Heading classes="dark t-cap mb-sm" type="tertiary">
             clories energy <br /> balance
@@ -291,22 +268,22 @@ function Home() {
           </Pragraph>
         </div>
         <Container>
-          <div className="calories-section__container">
-            <div className="calories-section__box " data-des="starters">
+          <div className="home__calories-section__container">
+            <div className="home__calories-section__box " data-des="starters">
               <img
                 src="https://www5.0zz0.com/2022/04/04/14/590471982.png"
                 alt="starter img"
                 className="img-fluid"
               />
             </div>
-            <div className="calories-section__box " data-des="mains">
+            <div className="home__calories-section__box " data-des="mains">
               <img
                 src="https://www4.0zz0.com/2022/04/04/14/753799530.png"
                 alt="Mains img"
                 className="img-fluid"
               />
             </div>
-            <div className="calories-section__box " data-des="soups">
+            <div className="home__calories-section__box " data-des="soups">
               <img
                 src="https://www4.0zz0.com/2022/04/04/14/265061459.png"
                 alt="Soups img"
@@ -316,10 +293,12 @@ function Home() {
           </div>
         </Container>
       </section>
+      {/* end calories section */}
 
-      <section className="quote-section">
+      {/* start quote section */}
+      <section className="home__quote-section">
         <Container>
-          <div className="quote-section__heading-box mb-xl">
+          <div className="home__quote-section__heading-box mb-xl">
             <Heading type="quaternary" dashed={false} classes="w-80 ">
               “ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus
               lorem id penatibus imperdiet. Turpis egestas ultricies purus Lorem
@@ -328,31 +307,36 @@ function Home() {
             <img
               src="https://www9.0zz0.com/2022/04/04/21/711026757.png"
               alt="quite img"
-              className="quote-section__img-quote"
+              className="home__quote-section__img-quote"
             />
           </div>
-          <div className="quote-section__container">
-            <div className="quote-section__user">
+          <div className="home__quote-section__container">
+            <div className="home__quote-section__user">
               <img
                 src="https://www7.0zz0.com/2022/04/04/21/619286015.png"
                 alt="user img"
               />
-              <div className="quote-section__user-details">
+              <div className="home__quote-section__user-details">
                 <h5 className="t-cap">john doe</h5>
                 <Pragraph classes="t-cap letter-space-lg" color="grey">
                   bloger
                 </Pragraph>
               </div>
             </div>
-            <div className="quote-section__pagination">
-              <span className="quote-section__pagination--arrow-left">←</span>
+            <div className="home__quote-section__pagination">
+              <span className="home__quote-section__pagination--arrow-left">
+                ←
+              </span>
               2/3
-              <span className="quote-section__pagination--arrow-right">→</span>
+              <span className="home__quote-section__pagination--arrow-right">
+                →
+              </span>
             </div>
           </div>
         </Container>
       </section>
-    </>
+      {/* end quote section */}
+    </div>
   );
 }
 

@@ -1,3 +1,5 @@
+import { useState, useEffect } from "react";
+
 import Container from "./Container";
 import LogoWhite from "../imgs/logo-white.png";
 import Toggle from "./Toggle";
@@ -5,8 +7,27 @@ import Button from "./Button";
 import Pragraph from "./Pragraph";
 
 function Navbar() {
+  const [
+    isScrollValueMoreThanHeaderHeight,
+    setIsScrollValueMoreThanHeaderHeight,
+  ] = useState(false);
+
+  //here 96(px) - height of current header
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrollValueMoreThanHeaderHeight(window.scrollY > 1500);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
-    <nav className="navbar">
+    <nav
+      className={
+        isScrollValueMoreThanHeaderHeight ? "navbar scrolled" : "navbar"
+      }
+    >
       <Container>
         <div className="navbar__container">
           <div className="navbar__logo-box">

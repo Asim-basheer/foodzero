@@ -1,11 +1,15 @@
 .navbar {
-  height: 10rem;
+  height: 9rem;
   background-color: $green-dark;
   @include flexCenterItems;
   position: sticky;
   top: 0;
   z-index: 1000;
-
+  transition: all 0.3s ease-out;
+  &.scrolled {
+    height: 8rem;
+    background-color: $green;
+  }
   &__container {
     display: flex;
     align-items: center;

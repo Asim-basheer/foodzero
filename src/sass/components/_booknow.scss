@@ -15,6 +15,10 @@
         outline: none;
         box-shadow: 0 1rem 3rem rgba($green-light, 0.6);
       }
+
+      @include respond(md) {
+        width: 100%;
+      }
     }
   }
   &__container {

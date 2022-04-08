@@ -1,16 +1,57 @@
 .fashion-card {
-  position: relative;
-  &::before {
-    content: attr(data-name);
-    text-transform: capitalize;
-    background-color: $green;
-    padding: 0.75rem 3rem;
-    color: white;
-    font-weight: 700;
-    font-family: "Rufina", serif;
-    font-size: 2rem;
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
+  &__img-box {
+    position: relative;
+    margin-bottom: 2rem;
+
+    &::before {
+      content: attr(data-fashion);
+      position: absolute;
+      right: 1rem;
+      top: 1rem;
+      font-size: 2rem;
+      background-color: $green;
+      color: $white;
+      text-transform: capitalize;
+      padding: 1rem 4rem;
+    }
+  }
+
+  &__user-comment {
+    &--list {
+      @include flexCenterItems;
+      justify-content: space-between;
+      margin-bottom: 2rem;
+
+      @include respond(md) {
+        text-align: center;
+        line-height: 1.5;
+        list-style: none;
+        padding: 0 2rem;
+      }
+    }
+
+    &--item {
+      font-size: 1.4rem;
+      &:nth-of-type(1) {
+        @include flexCenterItems;
+      }
+    }
+  }
+
+  &__link {
+    @include flexCenterItems;
+    justify-content: flex-start;
+    font-size: 1.8rem;
+    text-decoration: none;
+    color: $dark;
+    > img {
+      width: 3rem;
+      transform: translate(1rem, 2px);
+    }
+  }
+
+  &__comment {
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
 }
