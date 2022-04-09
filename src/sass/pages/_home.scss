@@ -2,6 +2,7 @@
   &__hero-section-1 {
     height: 100vh;
     background-color: $green-dark;
+    margin-top: 9rem;
 
     @include respond(md) {
       height: 80vh;
@@ -13,7 +14,7 @@
     &__content {
       position: absolute;
       left: 0;
-      top: 45%;
+      top: 50%;
       transform: translateY(-50%);
       z-index: 2;
     }
@@ -173,7 +174,7 @@
     &__box {
       position: relative;
       cursor: pointer;
-      transition: all 0.3s cubic-bezier(0.97, 0.36, 0.29, 1.06);
+      transition: all 0.3s ease;
       &:hover {
         transform: translateY(-5px);
       }
@@ -192,7 +193,7 @@
     }
 
     &__box img {
-      transition: all 0.3s cubic-bezier(0.97, 0.36, 0.29, 1.06);
+      transition: all 0.3s ease;
     }
     &__box::before {
       content: attr(data-des);
@@ -203,7 +204,7 @@
       font-weight: 700;
       text-transform: capitalize;
       color: $green-dark;
-      transition: all 0.3s cubic-bezier(0.97, 0.36, 0.29, 1.06);
+      transition: all 0.3s ease;
       z-index: 10;
     }
     &__box::after {
@@ -212,7 +213,7 @@
       right: 2rem;
       top: 0.8rem;
       font-size: 4rem;
-      transition: all 0.3s cubic-bezier(0.97, 0.36, 0.29, 1.06);
+      transition: all 0.3s ease;
     }
   }
 

@@ -1,13 +1,17 @@
-import * as ReactDOMClient from "react-dom/client";
+import React from "react";
+import ReactDOM from "react-dom";
 import App from "./App";
+
+import ScrollToTop from "./components/scrollToTop";
 import "./sass/main.scss";
-const container = document.getElementById("app");
+import { BrowserRouter as Router } from "react-router-dom";
 
-// Create a root.
-const root = ReactDOMClient.createRoot(container);
-
-// Initial render: Render an element to the root.
-root.render(<App tab="home" />);
-
-// During an update, there's no need to pass the container again.
-root.render(<App tab="profile" />);
+ReactDOM.render(
+  <React.StrictMode>
+    <Router basename="/foodzero">
+      <ScrollToTop />
+      <App />
+    </Router>
+  </React.StrictMode>,
+  document.getElementById("root")
+);

@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 function Button({
   children,
   type = "primary-white",
@@ -8,29 +10,29 @@ function Button({
   switch (tag) {
     case "link":
       return (
-        <a href={href} className={`btn btn--${type} ${classes}`}>
+        <Link to={href} className={`btn btn--${type} ${classes}`}>
           {children}
-        </a>
+        </Link>
       );
     case "buttonSubmit-1":
       return (
-        <button
+        <Link
           type="submit"
-          href={href}
+          to={href}
           className={`btn btn--submit-1 ${classes}`}
         >
           {children}
-        </button>
+        </Link>
       );
     case "buttonSubmit-2":
       return (
-        <button
+        <Link
           type="submit"
-          href={href}
+          to={href}
           className={`btn btn--submit-2 ${classes}`}
         >
           {children}
-        </button>
+        </Link>
       );
     default:
       return null;

@@ -28,7 +28,6 @@ function BookNow() {
     console.log(values);
   };
 
-  console.log(defaultValue);
   return (
     <section className="booknow  t-center">
       <Container>
@@ -57,11 +56,13 @@ function BookNow() {
             />
             <select name="option" onChange={handleChange} value={values.option}>
               <option value="1">2 person</option>
-              <option value="1">2 person</option>
-              <option value="1">2 person</option>
+              <option value="2">3 person</option>
+              <option value="3">4 person</option>
             </select>
           </div>
-          <Button tag="buttonSubmit-1">book now</Button>
+          <Button tag="buttonSubmit-1" href="/menu">
+            book now
+          </Button>
         </form>
       </Container>
     </section>

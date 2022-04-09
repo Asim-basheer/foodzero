@@ -239,15 +239,15 @@ function Home() {
               userImg="https://www2.0zz0.com/2022/04/08/00/942727979.png"
             />
             <FashionCard
-              imgCard="https://www2.0zz0.com/2022/04/08/00/392126827.png"
+              imgCard="https://www14.0zz0.com/2022/04/08/20/744027159.png"
               headingText="Fruit and vegetables and protection against diseases"
               pragraphText="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-              name="Julie Christie"
+              name="Dianne Russell"
               date="October 17,2021"
               time="3:33 pm"
               comments="2 comments"
               linkText="Read More"
-              userImg="https://www2.0zz0.com/2022/04/08/00/942727979.png"
+              userImg="https://www14.0zz0.com/2022/04/08/20/370139054.png"
             />
           </Row>
         </Container>

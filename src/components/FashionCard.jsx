@@ -17,7 +17,11 @@ function FashionCard({
   return (
     <div className="fashion-card">
       <div className="fashion-card__img-box" data-fashion={dataFashion}>
-        <img src={imgCard} alt="fashion img" className="img-fluid" />
+        <img
+          src={imgCard}
+          alt="fashion img"
+          className="fashion-card__img img-fluid"
+        />
       </div>
 
       <div className="fashion-card__user-comment">

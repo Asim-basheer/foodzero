@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-
+import { useLocation } from "react-router-dom";
 import Container from "./Container";
 import LogoWhite from "../imgs/logo-white.png";
 import Toggle from "./Toggle";
@@ -7,6 +7,7 @@ import Button from "./Button";
 import Pragraph from "./Pragraph";
 
 function Navbar() {
+  const { pathname } = useLocation();
   const [
     isScrollValueMoreThanHeaderHeight,
     setIsScrollValueMoreThanHeaderHeight,
@@ -16,7 +17,7 @@ function Navbar() {
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrollValueMoreThanHeaderHeight(window.scrollY > 1500);
+      setIsScrollValueMoreThanHeaderHeight(window.scrollY > 90);
     };
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
@@ -25,7 +26,9 @@ function Navbar() {
   return (
     <nav
       className={
-        isScrollValueMoreThanHeaderHeight ? "navbar scrolled" : "navbar"
+        isScrollValueMoreThanHeaderHeight
+          ? `navbar scrolled ${pathname === "/" ? "bg-green" : ""}`
+          : `navbar ${pathname === "/" ? "bg-green" : ""}`
       }
     >
       <Container>

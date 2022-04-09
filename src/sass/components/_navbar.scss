@@ -1,11 +1,17 @@
 .navbar {
   height: 9rem;
-  background-color: $green-dark;
+  background-color: transparent;
   @include flexCenterItems;
-  position: sticky;
+  position: fixed;
   top: 0;
+  left: 0;
+  width: 100%;
   z-index: 1000;
   transition: all 0.3s ease-out;
+
+  &.bg-green {
+    background-color: $green-dark;
+  }
   &.scrolled {
     height: 8rem;
     background-color: $green;

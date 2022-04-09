@@ -13,7 +13,24 @@
       color: $white;
       text-transform: capitalize;
       padding: 1rem 4rem;
+      z-index: 100;
+      transition: all 0.5s ease;
     }
+  }
+
+  &__img {
+    transition: all 0.5s ease;
+  }
+
+  &__img-box:hover &__img {
+    transform: scale(0.95) rotate(1deg);
+    filter: blur(1px) grayscale(0.2);
+  }
+
+  &__img-box:hover::before {
+    right: 2rem;
+    top: 3rem;
+    font-size: 1.8rem;
   }
 
   &__user-comment {
@@ -44,9 +61,13 @@
     font-size: 1.8rem;
     text-decoration: none;
     color: $dark;
-    > img {
+    img {
       width: 3rem;
-      transform: translate(1rem, 2px);
+      margin-top: 4px;
+      margin-left: 1rem;
+    }
+    &:hover img {
+      animation: arrowAnimation 0.5s infinite ease-out;
     }
   }
 
