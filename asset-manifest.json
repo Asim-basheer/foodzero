@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/foodzero/static/css/main.7af2aa4f.css",
-    "main.js": "/foodzero/static/js/main.d99acf79.js",
+    "main.css": "/foodzero/static/css/main.128a7d8f.css",
+    "main.js": "/foodzero/static/js/main.80dfd214.js",
     "index.html": "/foodzero/index.html",
     "static/media/arrow-right.svg": "/foodzero/static/media/arrow-right.fd4af5bd5c3c752bf5935cf86ab574a3.svg",
-    "main.7af2aa4f.css.map": "/foodzero/static/css/main.7af2aa4f.css.map",
-    "main.d99acf79.js.map": "/foodzero/static/js/main.d99acf79.js.map"
+    "main.128a7d8f.css.map": "/foodzero/static/css/main.128a7d8f.css.map",
+    "main.80dfd214.js.map": "/foodzero/static/js/main.80dfd214.js.map"
   },
   "entrypoints": [
-    "static/css/main.7af2aa4f.css",
-    "static/js/main.d99acf79.js"
+    "static/css/main.128a7d8f.css",
+    "static/js/main.80dfd214.js"
   ]
 }
