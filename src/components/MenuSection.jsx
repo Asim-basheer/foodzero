@@ -9,9 +9,12 @@ function MenuSection({
   titleSub,
   contentLeft = false,
   lastSectionInPage = false,
+  classes = "",
 }) {
   return (
-    <section className={`menu-section ${lastSectionInPage ? "last" : ""}`}>
+    <section
+      className={`menu-section ${lastSectionInPage ? "last" : ""} ${classes}`}
+    >
       <Container>
         <div className="main-heading mb-xl t-center">
           <Heading classes="dark t-cap mb-sm" type="tertiary">

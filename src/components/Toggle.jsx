@@ -1,6 +1,6 @@
-function Toggle() {
+function Toggle({ onClick }) {
   return (
-    <div className="toggle">
+    <div className="toggle" onClick={onClick}>
       <span>&nbsp;</span>
     </div>
   );

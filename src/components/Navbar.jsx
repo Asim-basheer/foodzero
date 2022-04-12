@@ -6,7 +6,7 @@ import Toggle from "./Toggle";
 import Button from "./Button";
 import Pragraph from "./Pragraph";
 
-function Navbar() {
+function Navbar({ handleToggleState }) {
   const { pathname } = useLocation();
   const [
     isScrollValueMoreThanHeaderHeight,
@@ -37,7 +37,7 @@ function Navbar() {
             <img src={LogoWhite} alt="logo" className="navbar__logo" />
           </div>
 
-          <Toggle />
+          <Toggle onClick={() => handleToggleState(true)} />
 
           <div className="navbar__contact-us">
             <Pragraph>+86 852 346 000</Pragraph>

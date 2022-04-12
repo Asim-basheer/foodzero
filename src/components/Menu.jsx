@@ -25,6 +25,7 @@ function Menu() {
         img="https://www4.0zz0.com/2022/04/08/21/966203206.png"
         title="Starters"
         titleSub="this is a section of your menu. Give your section a brief description"
+        classes="menu__starters"
       >
         <div className="heading-description">
           <Heading classes="dark mb-lg t-right" type="quaternary">
@@ -93,10 +94,10 @@ function Menu() {
             <span>$</span>20
           </Heading>
           <Heading classes="dark t-cap mb-lg" type="secondary">
-            Basil Pancakes
+            Steaks with Grilled <br /> Kimchi
           </Heading>
           <Pragraph color="grey ">
-            Steaks with Grilled <br /> Kimchi
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
           </Pragraph>
         </div>
       </MenuSection>
@@ -105,6 +106,7 @@ function Menu() {
         title="Pastries & Drinks"
         titleSub="this is a section of your menu. Give your section a brief description"
         lastSectionInPage={true}
+        classes="menu__drinks"
       >
         <div className="heading-description">
           <Heading classes="dark mb-lg t-right" type="quaternary">

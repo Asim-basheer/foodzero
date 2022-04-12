@@ -123,3 +123,7 @@
 .letter-space-lg {
   letter-spacing: 1.5px;
 }
+
+.dashed-white {
+  border-bottom: 2px dashed $white !important;
+}

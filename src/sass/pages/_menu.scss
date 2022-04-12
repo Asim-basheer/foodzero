@@ -4,8 +4,10 @@
     background-image: url(https://www13.0zz0.com/2022/04/08/20/829037356.png);
     background-repeat: no-repeat;
     background-position: center;
+    background-attachment: fixed;
     background-size: cover;
     position: relative;
+
     &::before {
       content: "";
       position: absolute;
@@ -28,6 +30,28 @@
       left: 0;
       top: 50%;
       transform: translateY(-50%);
+    }
+  }
+
+  &__starters {
+    background-image: url(https://www8.0zz0.com/2022/04/11/23/123038567.png);
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: 30%;
+    @include respond(sm) {
+      background-size: 45%;
+    }
+  }
+
+  &__drinks {
+    background-image: url(https://www12.0zz0.com/2022/04/12/00/405089618.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 25rem;
+
+    @include respond(sm) {
+      background-position: center 10rem;
+      background-size: 30%;
     }
   }
 }
