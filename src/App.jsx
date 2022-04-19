@@ -10,6 +10,7 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Menu from "./components/Menu";
 import Navigation from "./components/Navigation";
+import About from "./components/About";
 
 function App() {
   const [toggleState, setToggleState] = useState(false);
@@ -28,6 +29,7 @@ function App() {
         <Routes>
           <Route path="" element={<Home />} />
           <Route path="menu" element={<Menu />} />
+          <Route path="about" element={<About />} />
         </Routes>
       </main>
 

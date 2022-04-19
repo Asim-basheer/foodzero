@@ -5,7 +5,7 @@ import Container from "./Container";
 import Heading from "./Heading";
 import Pragraph from "./Pragraph";
 
-function BookNow() {
+function BookNow({ classes = "" }) {
   const today = new Date();
   const date = today.setDate(today.getDate());
   const defaultValue = new Date(date).toISOString().split("T")[0];
@@ -29,7 +29,7 @@ function BookNow() {
   };
 
   return (
-    <section className="booknow  t-center">
+    <section className={`booknow t-center ${classes}`}>
       <Container>
         <div className="t-center mb-xl">
           <Heading classes="dark t-first-upper mb-sm" type="tertiary">

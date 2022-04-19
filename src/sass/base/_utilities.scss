@@ -17,6 +17,10 @@
   }
 }
 
+.ms-auto {
+  margin-inline-start: auto;
+}
+
 .text-small {
   font-size: 1.4rem;
 }
@@ -58,11 +62,22 @@
   max-width: 25%;
 }
 
+.fs-lg {
+  font-size: 2rem !important;
+}
+.fs-md {
+  font-size: 1.5rem;
+}
+.fs-sm {
+  font-size: 1rem;
+}
+
 .w-100,
 .w-90,
 .w-85,
 .w-80,
 .w-75,
+.w-65,
 .w-60,
 .w-50,
 .w-30,
@@ -73,7 +88,7 @@
 }
 
 .white {
-  color: $white;
+  color: $white !important;
 }
 
 .dark {
