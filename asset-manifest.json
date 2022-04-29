@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/foodzero/static/css/main.066e4d8d.css",
-    "main.js": "/foodzero/static/js/main.276b0520.js",
+    "main.css": "/foodzero/static/css/main.b0d9c4a3.css",
+    "main.js": "/foodzero/static/js/main.31ef52a5.js",
     "static/media/rosemary-left.svg": "/foodzero/static/media/rosemary-left.4b07b5847dad3adea5b1c8d9f3f12713.svg",
     "static/media/rosemary-right.svg": "/foodzero/static/media/rosemary-right.d6656cba804f5dbe40870df163c56a24.svg",
     "index.html": "/foodzero/index.html",
     "static/media/Play.svg": "/foodzero/static/media/Play.ca54deb1ed7c207aee70b7a42491ecd3.svg",
     "static/media/arrow-right.svg": "/foodzero/static/media/arrow-right.fd4af5bd5c3c752bf5935cf86ab574a3.svg",
-    "main.066e4d8d.css.map": "/foodzero/static/css/main.066e4d8d.css.map",
-    "main.276b0520.js.map": "/foodzero/static/js/main.276b0520.js.map"
+    "main.b0d9c4a3.css.map": "/foodzero/static/css/main.b0d9c4a3.css.map",
+    "main.31ef52a5.js.map": "/foodzero/static/js/main.31ef52a5.js.map"
   },
   "entrypoints": [
-    "static/css/main.066e4d8d.css",
-    "static/js/main.276b0520.js"
+    "static/css/main.b0d9c4a3.css",
+    "static/js/main.31ef52a5.js"
   ]
 }
