@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/foodzero/static/css/main.e55bc260.css",
-    "main.js": "/foodzero/static/js/main.31ef52a5.js",
-    "static/media/rosemary-left.svg": "/foodzero/static/media/rosemary-left.4b07b5847dad3adea5b1c8d9f3f12713.svg",
-    "static/media/rosemary-right.svg": "/foodzero/static/media/rosemary-right.d6656cba804f5dbe40870df163c56a24.svg",
+    "main.css": "/foodzero/static/css/main.8311a725.css",
+    "main.js": "/foodzero/static/js/main.3f743de5.js",
+    "static/media/rosemary-left.svg": "/foodzero/static/media/rosemary-left.b66865aebcbe804d69af00df7cf925e5.svg",
+    "static/media/rosemary-right.svg": "/foodzero/static/media/rosemary-right.92e740d98a2ebbfed4ac6cb158fd3d8d.svg",
     "index.html": "/foodzero/index.html",
-    "static/media/Play.svg": "/foodzero/static/media/Play.ca54deb1ed7c207aee70b7a42491ecd3.svg",
-    "static/media/arrow-right.svg": "/foodzero/static/media/arrow-right.fd4af5bd5c3c752bf5935cf86ab574a3.svg",
-    "main.e55bc260.css.map": "/foodzero/static/css/main.e55bc260.css.map",
-    "main.31ef52a5.js.map": "/foodzero/static/js/main.31ef52a5.js.map"
+    "static/media/Play.svg": "/foodzero/static/media/Play.7a4395677d90432f8573157ad9293a3c.svg",
+    "static/media/arrow-right.svg": "/foodzero/static/media/arrow-right.6da99b97501b2bcd0db894f8ed6c0f84.svg",
+    "main.8311a725.css.map": "/foodzero/static/css/main.8311a725.css.map",
+    "main.3f743de5.js.map": "/foodzero/static/js/main.3f743de5.js.map"
   },
   "entrypoints": [
-    "static/css/main.e55bc260.css",
-    "static/js/main.31ef52a5.js"
+    "static/css/main.8311a725.css",
+    "static/js/main.3f743de5.js"
   ]
 }
