@@ -1,10 +1,10 @@
-import { useState, useEffect } from "react";
-import { useLocation } from "react-router-dom";
-import Container from "./Container";
-import LogoWhite from "../imgs/logo-white.png";
-import Toggle from "./Toggle";
-import Button from "./Button";
-import Pragraph from "./Pragraph";
+import { useState, useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
+import Container from './Container';
+import LogoWhite from '../imgs/logo-white.png';
+import Toggle from './Toggle';
+import Button from './Button';
+import Pragraph from './Pragraph';
 
 function Navbar({ handleToggleState }) {
   const { pathname } = useLocation();
@@ -19,27 +19,27 @@ function Navbar({ handleToggleState }) {
     const handleScroll = () => {
       setIsScrollValueMoreThanHeaderHeight(window.scrollY > 90);
     };
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
   return (
     <nav
       className={
         isScrollValueMoreThanHeaderHeight
-          ? `navbar scrolled ${pathname === "/" ? "bg-green" : ""}`
-          : `navbar ${pathname === "/" ? "bg-green" : ""}`
+          ? `navbar scrolled ${pathname === '/' ? 'bg-green' : ''}`
+          : `navbar ${pathname === '/' ? 'bg-green' : ''}`
       }
     >
       <Container>
-        <div className="navbar__container">
-          <div className="navbar__logo-box">
-            <img src={LogoWhite} alt="logo" className="navbar__logo" />
+        <div className='navbar__container'>
+          <div className='navbar__logo-box'>
+            <img src={LogoWhite} alt='logo' className='navbar__logo' />
           </div>
 
           <Toggle onClick={() => handleToggleState(true)} />
 
-          <div className="navbar__contact-us">
+          <div className='navbar__contact-us'>
             <Pragraph>+86 852 346 000</Pragraph>
             <Button>reservations</Button>
           </div>

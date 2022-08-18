@@ -1,28 +1,30 @@
-@import "abstracts/functions";
-@import "abstracts/mixins";
-@import "abstracts/variables";
+@import 'abstracts/functions';
+@import 'abstracts/mixins';
+@import 'abstracts/variables';
 
-@import "base/animations";
-@import "base/base";
-@import "base/typography";
-@import "base/utilities";
+@import 'base/animations';
+@import 'base/base';
+@import 'base/typography';
+@import 'base/utilities';
 
-@import "components/container";
+@import 'components/container';
 
-@import "components/navbar";
-@import "components/toggle";
-@import "components/button";
-@import "components/heading";
-@import "components/pragraph";
-@import "components/user-comment";
-@import "components/fashion-card";
-@import "components/fashion-section";
-@import "components/booknow";
-@import "components/footer";
-@import "components/row";
-@import "components/menu-section";
-@import "components/navigation";
+@import 'components/navbar';
+@import 'components/toggle';
+@import 'components/button';
+@import 'components/heading';
+@import 'components/pragraph';
+@import 'components/user-comment';
+@import 'components/fashion-card';
+@import 'components/fashion-section';
+@import 'components/booknow';
+@import 'components/footer';
+@import 'components/row';
+@import 'components/menu-section';
+@import 'components/navigation';
+@import 'components/contact_us';
 
-@import "pages/home";
-@import "pages/menu";
-@import "pages/about";
+@import 'pages/home';
+@import 'pages/menu';
+@import 'pages/about';
+@import 'pages/blogs';
