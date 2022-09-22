@@ -1,7 +1,7 @@
 .footer {
+  position: relative;
   background-color: $green-dark;
   padding: 10rem 0 20rem;
-  position: relative;
   &__container {
     @include flexCenterItems;
     justify-content: space-between;
@@ -12,6 +12,17 @@
       gap: 4rem;
     }
   }
+
+  &__logo {
+    > h2 {
+      br {
+        @include respond(sm) {
+          display: none;
+        }
+      }
+    }
+  }
+
   &__form {
     &--box {
       @include flexCenterItems;

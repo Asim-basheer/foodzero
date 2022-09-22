@@ -28,7 +28,9 @@ function Navbar({ handleToggleState }) {
       className={
         isScrollValueMoreThanHeaderHeight
           ? `navbar scrolled ${pathname === '/' ? 'bg-green' : ''}`
-          : `navbar ${pathname === '/' ? 'bg-green' : ''}`
+          : `navbar ${
+              pathname === '/' || pathname === '/contact' ? 'bg-green' : ''
+            }`
       }
     >
       <Container>

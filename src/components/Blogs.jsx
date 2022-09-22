@@ -9,7 +9,7 @@ const Blogs = () => {
     <section className='blogs'>
       <div className='blogs__background'>
         <div className='blogs__content'>
-          <Heading classes='mb-md white'>Blogs - Two Columns</Heading>
+          <Heading classes='mb-md white'>Our Blogs</Heading>
           <Pragraph>
             It is easy way to create your beatiful blog for daily
           </Pragraph>

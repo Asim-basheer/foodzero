@@ -1,28 +1,26 @@
-import Button from './Button';
-
 const ContactUs = () => {
   return (
     <section className='contact-us'>
       <form className='contact-us__form'>
-        <div className='contact-us__input-gruop'>
-          <label htmlFor='' className='t-cap'>
-            user name
+        <div className='contact-us__input-group'>
+          <input type='text' id='name' />
+          <label htmlFor='name' className='t-cap'>
+            your name
           </label>
-          <input type='text' />
         </div>
-        <div className='contact-us__input-gruop'>
-          <label htmlFor='' className='t-cap'>
-            user name
+        <div className='contact-us__input-group'>
+          <input type='text' id='email' />
+          <label htmlFor='email' className='t-cap'>
+            your email
           </label>
-          <input type='text' />
         </div>
-        <div className='contact-us__input-gruop'>
-          <label htmlFor='' className='t-cap'>
-            user name
+        <div className='contact-us__input-group'>
+          <textarea name='' rows='5' id='message'></textarea>
+          <label htmlFor='message' className='t-cap'>
+            your message
           </label>
-          <textarea name='' rows='40'></textarea>
         </div>
-        <Button>send message</Button>
+        <button className='contact-us__btn'>Send a message</button>
       </form>
     </section>
   );
